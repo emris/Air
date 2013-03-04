@@ -1,0 +1,12 @@
+[
+{
+  "modid": "Air",
+  "name": "Replace to Air",
+  "version": "1.0",
+  "updateUrl": "",
+  "authors": [
+    "Emris_Morath"
+  ],
+  "description": "A simple Server side chat mod that replaces/deletes any Block the player is looking at.\nWorks in Singleplayer also."
+}
+]
