@@ -1,3 +1,20 @@
+/*
+ *  Copyright (C) 2013  emris
+ *  https://github.com/emris/Air
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
 package emris.mods.Air;
 
 import java.util.List;
@@ -36,7 +53,7 @@ public class CommandAir extends CommandBase {
 					World world = curPlayer.worldObj;
 					int bID = world.getBlockId(mop.blockX, mop.blockY, mop.blockZ);
 					if (bID > 0) {
-						world.setBlockWithNotify(mop.blockX, mop.blockY, mop.blockZ, 0);
+						world.setBlockToAir(mop.blockX, mop.blockY, mop.blockZ);
 					}
 				}
 			}
