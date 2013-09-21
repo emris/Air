@@ -15,22 +15,22 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package emris.mods.Air;
+package emris.Air;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.Mod.ServerStarting;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid="Air", name="Replace to Air", version="1.1")
+@Mod(modid="Air", name="Replace to Air", version="1.2")
 @NetworkMod(clientSideRequired=false, serverSideRequired=false)
 public class Air {
 	
 	@Instance("Air")
 	public static Air instance;
 	
-	@ServerStarting
+	@EventHandler
 	public void serverStarting(FMLServerStartingEvent event) {
 		event.registerServerCommand(new CommandAir());
 	}
