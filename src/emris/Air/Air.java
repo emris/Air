@@ -1,4 +1,4 @@
-/*
+/**
  *  Copyright (C) 2013  emris
  *  https://github.com/emris/Air
  *
@@ -23,13 +23,13 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
-@Mod(modid="Air", name="Replace to Air", version="1.2")
+@Mod(modid="air", name="Replace to Air", version="1.2")
 @NetworkMod(clientSideRequired=false, serverSideRequired=false)
 public class Air {
-	
+
 	@Instance("Air")
 	public static Air instance;
-	
+
 	@EventHandler
 	public void serverStarting(FMLServerStartingEvent event) {
 		event.registerServerCommand(new CommandAir());
